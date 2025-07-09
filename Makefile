@@ -1,5 +1,7 @@
 CC=gcc
-NAME=example_name
-FILES=$(shell ls *.c)
+PWD=$(shell pwd)
+BIN=$(PWD)/bin
+SRC=$(PWD)/src
+
 all:
-	echo $(FILES)
+	$(foreach(target, $(SRC), (shell cd $(target); make)))	
