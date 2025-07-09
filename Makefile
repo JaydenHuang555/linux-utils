@@ -1,4 +1,3 @@
-CC=gcc
 PWD=$(shell pwd)
 BIN=$(PWD)/bin
 SRC=$(PWD)/src
